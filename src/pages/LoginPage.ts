@@ -10,7 +10,7 @@ export default class LoginPage {
   private readonly loginButtonSelector = "#Login";
 
   constructor(private page: Page) {}
-
+  
   async quickLogin(username: string, password: string) {
     await this.navigateToLoginPage();
     await this.fillUsername(username);
